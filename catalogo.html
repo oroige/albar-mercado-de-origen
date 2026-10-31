@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="es" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Catálogo · Albar, mercado de origen</title>
+  <meta name="description" content="Lo que hay hoy en las tiendas Albar: fruta y verdura, pescadería, charcutería, quesería, panadería, despensa, granel y bodega, con origen, productor y precio por kilo.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--@header:catalogo-->
+
+<main id="contenido">
+  <header class="page-head">
+    <div class="wrap grid page-head__in">
+      <h1 data-reveal>Catálogo</h1>
+      <p class="lead" data-reveal style="--i:1">Lo que hay hoy en las siete tiendas, con quién lo hace, de dónde viene y cuánto cuesta el kilo.</p>
+    </div>
+  </header>
+
+  <section class="wrap" aria-labelledby="filtros-h">
+    <h2 class="sr" id="filtros-h">Filtros</h2>
+    <div class="filters" data-filters hidden>
+      <div class="filters__group" role="group" aria-labelledby="f-cat">
+        <span class="filters__label" id="f-cat">Mostrador</span>
+        <button class="chip" type="button" data-cat="" aria-pressed="true">Todo</button>
+        <button class="chip" type="button" data-cat="fruta-verdura" aria-pressed="false">Fruta y verdura</button>
+        <button class="chip" type="button" data-cat="pescaderia" aria-pressed="false">Pescadería</button>
+        <button class="chip" type="button" data-cat="charcuteria" aria-pressed="false">Charcutería</button>
+        <button class="chip" type="button" data-cat="queseria" aria-pressed="false">Quesería</button>
+        <button class="chip" type="button" data-cat="panaderia" aria-pressed="false">Panadería</button>
+        <button class="chip" type="button" data-cat="despensa" aria-pressed="false">Aceites y conservas</button>
+        <button class="chip" type="button" data-cat="granel" aria-pressed="false">Legumbres a granel</button>
+        <button class="chip" type="button" data-cat="bodega" aria-pressed="false">Bodega</button>
+      </div>
+      <div class="filters__group" role="group" aria-labelledby="f-badge">
+        <span class="filters__label" id="f-badge">Solo</span>
+        <button class="chip" type="button" data-badge="bio" aria-pressed="false">Bio</button>
+        <button class="chip" type="button" data-badge="km0" aria-pressed="false">Km 0</button>
+        <button class="chip" type="button" data-badge="nuevo" aria-pressed="false">Nuevo</button>
+        <button class="chip" type="button" data-badge="oferta" aria-pressed="false">En oferta</button>
+      </div>
+      <div class="filters__status">
+        <p class="filters__count" data-count role="status">20 productos</p>
+        <button class="link" type="button" data-reset hidden style="background:none;border:0;padding:0.5rem 0">Quitar filtros</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="wrap" aria-labelledby="productos-h">
+    <h2 class="sr" id="productos-h">Productos</h2>
+    <ul class="products" data-products>
+      <!--@products-->
+    </ul>
+    <div class="products__empty" data-empty hidden>
+      <h2>Nada con esos filtros</h2>
+      <p>Ningún producto de este mostrador tiene todos los distintivos que has marcado. Prueba a quitar alguno.</p>
+      <button class="btn btn--ink" type="button" data-reset>Quitar filtros</button>
+    </div>
+  </section>
+</main>
+
+<!--@footer-->
+<script type="module" src="src/js/catalogo.js"></script>
+</body>
+</html>

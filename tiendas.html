@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Tiendas · Albar, mercado de origen</title>
+  <meta name="description" content="Las siete tiendas Albar en Madrid, València, Barcelona, Bilbao, Donostia y Sevilla: dirección, horario, servicios y plano.">
+  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--@header:tiendas-->
+
+<main id="contenido">
+  <header class="page-head">
+    <div class="wrap grid page-head__in">
+      <h1 data-reveal>Tiendas</h1>
+      <p class="lead" data-reveal style="--i:1">Siete tiendas en seis ciudades. Cada una vende el fresco de su comarca: lo que hay en Gros no es lo que hay en Triana.</p>
+    </div>
+  </header>
+
+  <div class="wrap">
+    <nav class="cityjump" aria-label="Ir a una tienda">
+      <a href="#ponzano">Madrid · Ponzano</a>
+      <a href="#jorge-juan">Madrid · Jorge Juan</a>
+      <a href="#ruzafa">València · Ruzafa</a>
+      <a href="#sant-gervasi">Barcelona · Sant Gervasi</a>
+      <a href="#indautxu">Bilbao · Indautxu</a>
+      <a href="#gros">Donostia · Gros</a>
+      <a href="#triana">Sevilla · Triana</a>
+    </nav>
+    <ul class="stores">
+      <!--@stores-->
+    </ul>
+  </div>
+  <!--@storesjson-->
+</main>
+
+<!--@footer-->
+<script type="module" src="src/js/tiendas.js"></script>
+</body>
+</html>

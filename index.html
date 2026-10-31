@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="es" id="top">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, interactive-widget=resizes-content">
+  <title>Albar · Mercado de origen</title>
+  <meta name="description" content="Supermercados de producto de origen desde 1961. Cada producto llega con su albarán: quién lo cultivó, dónde y cuándo. Siete tiendas en Madrid, València, Barcelona, Bilbao, Donostia y Sevilla.">
+  <meta name="theme-color" content="#1b1a17">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&family=Barlow:ital,wght@0,400;0,500;1,400&display=swap">
+  <link rel="preload" as="image" href="media/hero-poster.avif" type="image/avif" fetchpriority="high">
+  <link rel="stylesheet" href="src/styles/main.css">
+  <script>document.documentElement.classList.add('js')</script>
+</head>
+<body>
+<!--@header:index-->
+
+<main id="contenido">
+  <!-- Intro: vídeo a pantalla completa y el albarán de la casa -->
+  <section class="hero" aria-labelledby="hero-title">
+    <div class="hero__media">
+      <video data-hero-video muted loop playsinline preload="none" poster="media/hero-poster.webp" aria-hidden="true" tabindex="-1">
+        <source src="media/hero.webm" type="video/webm">
+        <source src="media/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__scrim"></div>
+    <button class="hero__toggle" type="button" data-video-toggle aria-pressed="false" aria-label="Pausar el vídeo de fondo" data-state="playing">
+      <svg class="i-pause" viewBox="0 0 16 16" aria-hidden="true"><rect x="3" y="2" width="3.5" height="12"/><rect x="9.5" y="2" width="3.5" height="12"/></svg>
+      <svg class="i-play" viewBox="0 0 16 16" aria-hidden="true"><path d="M4 2 L14 8 L4 14 Z"/></svg>
+    </button>
+
+    <article class="albaran">
+            <h1 class="albaran__title" id="hero-title">
+        <span style="--w:0">Albar</span>
+        <span style="--w:1">Mercado</span>
+        <span style="--w:2">de origen</span>
+      </h1>
+      <dl class="albaran__fields">
+        <div class="field" style="--f:0"><dt>Fecha</dt><dd data-today>Hoy</dd></div>
+        <div class="field" style="--f:1"><dt>Origen del fresco</dt><dd>&lt; 150 km</dd></div>
+        <div class="field" style="--f:2"><dt>Productores</dt><dd>212 firmados</dd></div>
+        <div class="field" style="--f:3"><dt>Desde</dt><dd>1961</dd></div>
+      </dl>
+      <p class="albaran__lead">Supermercados de producto de origen. Cada pieza llega con su albarán: quién la cultivó, dónde y cuándo.</p>
+      <div class="albaran__foot">
+        <div class="albaran__sign">
+          <svg viewBox="0 0 140 40" aria-hidden="true"><path d="M4 28 C 14 8, 22 34, 30 20 S 44 6, 50 24 C 54 34, 62 14, 70 18 S 84 30, 92 16 C 98 6, 104 28, 114 22 L 136 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          <span>Albarán nº 0001961 · firma del productor</span>
+        </div>
+        <a class="btn" href="catalogo.html">Ver lo que hay hoy <span class="btn__arrow" aria-hidden="true">→</span></a>
+        <a class="link" href="#tiendas">Encuentra tu tienda</a>
+      </div>
+      <svg class="stamp" viewBox="0 0 160 90" aria-hidden="true">
+        <rect x="4" y="4" width="152" height="82" fill="none" stroke="currentColor" stroke-width="4"/>
+        <rect x="11" y="11" width="138" height="68" fill="none" stroke="currentColor" stroke-width="1.5"/>
+        <text x="80" y="44" text-anchor="middle" font-family="Barlow Condensed, sans-serif" font-weight="700" font-size="30" fill="currentColor">RECIBIDO</text>
+        <text x="80" y="66" text-anchor="middle" font-family="Barlow, sans-serif" font-weight="500" font-size="13" fill="currentColor">CON SU ALBARÁN</text>
+      </svg>
+    </article>
+  </section>
+
+  <!-- Manifiesto -->
+  <section class="section manifesto" aria-labelledby="manifiesto-h">
+    <div class="wrap">
+      <div class="grid manifesto__head">
+        <h2 class="manifesto__h" id="manifiesto-h" data-reveal>Sin albarán, no entra</h2>
+        <p class="manifesto__note" data-reveal style="--i:1">En 1961 Remedios Albar abrió un ultramarinos en la calle de Ponzano con una sola norma: ningún género sin su papel firmado. Sesenta y cinco años después la norma es la misma. Si no sabemos quién lo ha hecho, no lo vendemos.</p>
+      </div>
+      <ul class="facts">
+        <li data-reveal><p class="fact__n">1961</p><p class="fact__t">Primera tienda, en Chamberí. El mostrador de mármol sigue allí.</p></li>
+        <li data-reveal style="--i:1"><p class="fact__n">212</p><p class="fact__t">Productores con nombre, apellido y finca.</p></li>
+        <li data-reveal style="--i:2"><p class="fact__n">94 km</p><p class="fact__t">Distancia media del fresco hasta la tienda que lo vende.</p></li>
+        <li data-reveal style="--i:3"><p class="fact__n">48 h</p><p class="fact__t">Máximo entre la cosecha y el lineal.</p></li>
+      </ul>
+      <div class="grid manifesto__plate">
+        <blockquote class="manifesto__quote" data-reveal>
+          <p>«Si no sé quién lo ha hecho, no lo vendo.»</p>
+          <footer>Remedios Albar, fundadora, en 1961</footer>
+        </blockquote>
+        <div class="manifesto__pic" data-reveal="pic">
+          <x-pic name="bodegon" alt="Bodegón en penumbra: granadas, caquis y una jarra de barro sobre un paño oscuro" sizes="(min-width: 48em) 58vw, 100vw"></x-pic>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Mostradores: categorías destacadas -->
+  <section class="section counters" aria-labelledby="mostradores-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="counters__head">
+        <h2 class="h-section" id="mostradores-h" data-reveal>Ocho mostradores</h2>
+        <a class="link" href="catalogo.html" data-reveal style="--i:1">Ver el catálogo completo</a>
+      </div>
+      <ul class="tags">
+        <!--@categories-->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Temporada: la pieza viva -->
+  <section class="season" id="temporada" aria-labelledby="temporada-h">
+    <div class="wrap season__in" data-season>
+      <div class="plate" data-plate>
+        <x-pic name="caqui" alt="Caqui Rojo Brillante sobre fondo negro" sizes="(min-width: 48em) 46vw, 100vw"></x-pic>
+      </div>
+      <div class="season__side">
+        <div>
+          <h2 class="season__h" id="temporada-h">En temporada</h2>
+          <div class="tabs" role="tablist" aria-label="Mes" data-tabs>
+            <button role="tab" aria-selected="true" id="tab-9" aria-controls="season-panel">Octubre</button>
+            <button role="tab" aria-selected="false" id="tab-10" aria-controls="season-panel" tabindex="-1">Noviembre</button>
+            <button role="tab" aria-selected="false" id="tab-11" aria-controls="season-panel" tabindex="-1">Diciembre</button>
+          </div>
+        </div>
+        <div id="season-panel" role="tabpanel" aria-labelledby="tab-9" data-panel>
+          <div class="picks" data-picks role="group" aria-label="Productos del mes">
+            <button aria-pressed="true">Caqui Rojo Brillante</button>
+            <button aria-pressed="false">Níscalo</button>
+            <button aria-pressed="false">Castaña gallega</button>
+            <button aria-pressed="false">Granada Mollar</button>
+          </div>
+          <div class="pick" data-pick aria-live="polite">
+            <h3 class="pick__name" style="margin-top:2rem">Caqui Rojo Brillante</h3>
+            <p class="pick__note">Se come duro, como una manzana. Sin astringencia.</p>
+            <dl class="pick__fields">
+              <div class="field"><dt>Finca</dt><dd>Cooperativa de la Ribera</dd></div>
+              <div class="field"><dt>Dónde</dt><dd>Carlet, València</dd></div>
+              <div class="field"><dt>Distancia</dt><dd>31 km</dd></div>
+            </dl>
+          </div>
+        </div>
+        <div class="season__actions">
+          <a class="btn btn--ink" href="catalogo.html?cat=fruta-verdura">Ver fruta y verdura <span class="btn__arrow" aria-hidden="true">→</span></a>
+          <button class="btn btn--light" type="button" data-next>Siguiente producto <span class="btn__arrow" aria-hidden="true">→</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Origen: el viaje de un tomate -->
+  <section class="origin on-field" aria-labelledby="origen-h">
+    <div class="wrap grid origin__head">
+      <h2 class="origin__h" id="origen-h" data-reveal>De la mata al lineal en cinco horas</h2>
+      <p class="origin__intro" data-reveal style="--i:1">Un martes cualquiera de agosto, una caja de tomate de rama de la Huerta de los Almendros, en Aranjuez, hasta la tienda de Ponzano. El albarán se rellena a medida que avanza.</p>
+    </div>
+    <div class="wrap grid origin__body" data-story>
+      <div class="origin__sheet-col">
+        <div class="origin__sheet">
+          <h3>Albarán de entrada</h3>
+          <p class="small">Nº 26-08-0412 · Tienda Ponzano</p>
+          
+          <dl class="ledger">
+            <div class="field field--wide"><dt>Producto</dt><dd>Tomate de rama, 6 cajas de 8 kg</dd></div>
+            <div class="field" data-step="0"><dt>Recogido</dt><dd>05:40</dd></div>
+            <div class="field" data-step="0"><dt>Finca</dt><dd>Huerta de los Almendros</dd></div>
+            <div class="field" data-step="1"><dt>Cosecha</dt><dd>A mano, pintón</dd></div>
+            <div class="field" data-step="1"><dt>Cajas</dt><dd>Madera, 8 kg</dd></div>
+            <div class="field" data-step="2"><dt>Salida</dt><dd>09:30, a 12 °C</dd></div>
+            <div class="field" data-step="2"><dt>Distancia</dt><dd>47 km</dd></div>
+            <div class="field field--wide" data-step="3"><dt>En el lineal</dt><dd>11:20, Ponzano 38</dd></div>
+          </dl>
+          <div class="origin__sign">
+            <span>Firma: J. Almendros</span>
+            <svg viewBox="0 0 140 40" aria-hidden="true"><path d="M4 26 C 18 6, 26 34, 38 18 S 56 10, 62 26 C 68 34, 76 12, 88 20 S 108 28, 134 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </div>
+        </div>
+      </div>
+      <ol class="origin__steps">
+        <li data-step-trigger="0">
+          <div class="step__pic" data-reveal="pic"><x-pic name="tomatera" alt="Tomates maduros y verdes colgando de la mata, con luz de primera hora" sizes="(min-width: 64em) 52vw, 100vw"></x-pic></div>
+          <div class="step__cap"><p class="step__time">05:40</p><p>Se recoge con la primera luz, antes de que el sol caliente la fruta. Solo el tomate pintón: termina de madurar por el camino, nunca en cámara.</p></div>
+        </li>
+        <li data-step-trigger="1">
+          <div class="step__pic" data-reveal="pic"><x-pic name="recoleccion" alt="Una recolectora de espaldas, con una cesta, entre las hileras de un huerto al amanecer" sizes="(min-width: 64em) 52vw, 100vw"></x-pic></div>
+          <div class="step__cap"><p class="step__time">06:15</p><p>A mano y en cajas de madera de ocho kilos. Más peso aplasta la pieza de abajo; por eso no apilamos más de cuatro.</p></div>
+        </li>
+        <li data-step-trigger="2">
+          <div class="step__pic step__pic--wide" data-reveal="pic"><x-pic name="furgoneta" alt="Interior de una furgoneta de reparto cargada con cajas de madera" sizes="(min-width: 64em) 52vw, 100vw"></x-pic></div>
+          <div class="step__cap"><p class="step__time">09:30</p><p>Furgoneta a doce grados, no a cuatro: el frío de nevera mata el sabor del tomate. Cuarenta y siete kilómetros hasta Chamberí.</p></div>
+        </li>
+        <li data-step-trigger="3">
+          <div class="step__pic" data-reveal="pic"><x-pic name="tomates" alt="Tomates rojos con su rama sobre fondo negro" sizes="(min-width: 64em) 52vw, 100vw"></x-pic></div>
+          <div class="step__cap"><p class="step__time">11:20</p><p>En el lineal de Ponzano, con su albarán colgado. Si a las 20:00 queda alguno, va a la cocina de la tienda para el gazpacho del día siguiente.</p></div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Ofertas de la semana -->
+  <section class="section offers on-field" aria-labelledby="ofertas-h">
+    <div class="wrap">
+      <div class="offers__head">
+        <h2 class="h-section" id="ofertas-h" data-reveal>Ofertas de la semana</h2>
+        <p data-reveal style="--i:1">Del lunes 26 de octubre al domingo 1 de noviembre. Bajamos el precio cuando el productor tiene más de lo previsto, no para vaciar almacén.</p>
+      </div>
+      <article class="ticket notched" data-reveal aria-labelledby="ticket-h">
+        <div class="ticket__main">
+          <div>
+            <h3 class="ticket__what" id="ticket-h">Bonito del norte en aceite de oliva</h3>
+            <p class="ticket__by">Conservera Arrieta · Bermeo, Bizkaia · costera de 2026</p>
+          </div>
+          <ul class="ticket__terms">
+            <li>Lata de 300 g</li>
+            <li>29,83 €/kg</li>
+            <li>En las siete tiendas y a domicilio</li>
+            <li>Hasta el 1 de noviembre o fin de existencias</li>
+          </ul>
+        </div>
+        <div class="ticket__stub perf-v">
+          <p class="ticket__price">8,95 €</p>
+          <p class="ticket__was"><s><span class="sr">Antes </span>11,40 €</s></p>
+          <a class="btn" href="catalogo.html?f=oferta">Todas las ofertas</a>
+        </div>
+      </article>
+      <ul class="roll" aria-label="Más ofertas">
+        <li data-reveal><h3>Aceite virgen extra picual</h3><p class="roll__price"><span class="roll__now">7,90 €</span><s><span class="sr">Antes </span>9,20 €</s><span class="small">15,80 €/l</span></p><p class="small">Almazara Los Cerrillos, Jaén · 500 ml</p></li>
+        <li data-reveal style="--i:1"><h3>Queso de oveja curado</h3><p class="roll__price"><span class="roll__now">6,45 €</span><s><span class="sr">Antes </span>7,60 €</s><span class="small">25,80 €/kg</span></p><p class="small">Quesería Las Arribes, Zamora · 250 g</p></li>
+        <li data-reveal style="--i:2"><h3>Caqui Rojo Brillante</h3><p class="roll__price"><span class="roll__now">2,49 €</span><s><span class="sr">Antes </span>2,95 €</s><span class="small">2,49 €/kg</span></p><p class="small">Cooperativa de la Ribera, València · 1 kg</p></li>
+        <li data-reveal style="--i:3"><h3>Pan de centeno de masa madre</h3><p class="roll__price"><span class="roll__now">3,80 €</span><s><span class="sr">Antes </span>4,40 €</s><span class="small">6,33 €/kg</span></p><p class="small">Obrador Albar · 600 g</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- App y entrega a domicilio -->
+  <section class="section home-delivery" id="entrega" aria-labelledby="entrega-h">
+    <div class="wrap grid home-delivery__in">
+      <div class="menu scalloped" data-reveal>
+        <h2 class="menu__h" id="entrega-h">Albar en casa</h2>
+        <p class="menu__intro">El mismo género que en tienda, preparado por la misma persona del mostrador. En Madrid, Barcelona y València.</p>
+        <div class="menu__group">
+          <h3>Entrega</h3>
+          <ul class="menu__items">
+            <li><div class="menu__row"><span class="n">En dos horas</span><span class="dots" aria-hidden="true"></span><span class="v">3,90 €</span></div><p class="menu__desc">Pedidos hasta las 19:00, de lunes a sábado.</p></li>
+            <li><div class="menu__row"><span class="n">Franja de una hora</span><span class="dots" aria-hidden="true"></span><span class="v">2,50 €</span></div><p class="menu__desc">Eliges la hora al pedir, hasta con seis días de antelación.</p></li>
+            <li><div class="menu__row"><span class="n">Pedidos desde 60 €</span><span class="dots" aria-hidden="true"></span><span class="v">Gratis</span></div></li>
+            <li><div class="menu__row"><span class="n">Recogida en tienda</span><span class="dots" aria-hidden="true"></span><span class="v">Gratis</span></div><p class="menu__desc">Listo en 45 minutos en el mostrador de pedidos.</p></li>
+          </ul>
+        </div>
+        <div class="menu__group">
+          <h3>En la app</h3>
+          <ul class="menu__items">
+            <li><div class="menu__row"><span class="n">El albarán de cada producto</span><span class="dots" aria-hidden="true"></span><span class="v">Incluido</span></div><p class="menu__desc">Escaneas la etiqueta y ves finca, día de cosecha y kilómetros.</p></li>
+            <li><div class="menu__row"><span class="n">Lista compartida con tu casa</span><span class="dots" aria-hidden="true"></span><span class="v">Incluida</span></div></li>
+            <li><div class="menu__row"><span class="n">Aviso cuando entra la temporada</span><span class="dots" aria-hidden="true"></span><span class="v">Incluido</span></div><p class="menu__desc">Te avisamos el día que llegan los primeros níscalos o la primera cereza.</p></li>
+          </ul>
+        </div>
+        <div class="menu__group">
+          <h3>Bolsas y envases</h3>
+          <ul class="menu__items">
+            <li><div class="menu__row"><span class="n">Bolsa de papel</span><span class="dots" aria-hidden="true"></span><span class="v">0,10 €</span></div></li>
+            <li><div class="menu__row"><span class="n">Devolución de cajas y tarros</span><span class="dots" aria-hidden="true"></span><span class="v">−0,20 €</span></div><p class="menu__desc">Se descuentan en el siguiente pedido.</p></li>
+          </ul>
+        </div>
+      </div>
+      <div class="home-delivery__side">
+        <div class="home-delivery__pic" data-reveal="pic"><x-pic name="bolsa" alt="Bolsa de papel con verdura fresca: puerros, zanahorias y hojas verdes" sizes="(min-width: 48em) 38vw, 100vw"></x-pic></div>
+        <div class="home-delivery__cap" data-reveal>
+          <p class="lead">La app de Albar está en iOS y Android. Con la misma cuenta pides en la web.</p>
+          <a class="btn btn--ink" href="catalogo.html">Empezar un pedido <span class="btn__arrow" aria-hidden="true">→</span></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Buscador de tiendas -->
+  <section class="section finder" id="tiendas" aria-labelledby="buscar-h">
+    <div class="wrap">
+      <div class="coupon notched" data-reveal>
+        <div class="coupon__left">
+          <h2 class="coupon__h" id="buscar-h">Tu tienda más cerca</h2>
+          <p>Siete tiendas en seis ciudades. Escribe tu ciudad, tu barrio o tu código postal.</p>
+        </div>
+        <form class="coupon__form" data-finder action="tiendas.html" role="search">
+          <label for="finder-q">Ciudad, barrio o código postal</label>
+          <input class="input" id="finder-q" name="q" type="search" placeholder="Por ejemplo, Chamberí o 46006" autocomplete="postal-code" enterkeyhint="search">
+          <button class="btn btn--light" type="submit">Buscar tienda</button>
+          <p class="coupon__hint">Solo se busca en esta página; no usamos tu ubicación.</p>
+        </form>
+      </div>
+      <div class="finder__result">
+        <p class="finder__count" data-finder-count role="status">Las siete tiendas</p>
+        <ul class="finder__list" data-finder-list></ul>
+      </div>
+      <!--@storesjson-->
+    </div>
+  </section>
+
+  <!-- Testimonios -->
+  <section class="section letters" aria-labelledby="cartas-h" style="padding-top:0">
+    <div class="wrap grid letters__in">
+      <h2 class="letters__h" id="cartas-h" data-reveal>Nos escriben</h2>
+      <div class="notes">
+        <blockquote class="note" data-reveal>
+          <p>Pedí espárragos blancos un viernes a las seis y a las ocho estaban en casa, todavía con tierra. El repartidor me dijo de qué huerta venían sin mirar el papel.</p>
+          <footer>Javier Echeverría, Indautxu</footer>
+        </blockquote>
+        <blockquote class="note" data-reveal style="--i:1">
+          <p>Mi hija tiene alergia al sulfito. En Albar me sacan el albarán y me enseñan con qué se ha tratado cada cosa. En ningún otro sitio me lo han sabido decir.</p>
+          <footer>Marta Sáez Vidal, Sant Gervasi</footer>
+        </blockquote>
+      </div>
+      <blockquote class="letter" data-reveal style="--i:1">
+        <p class="letter__open">Compro en Ponzano desde 1979, cuando todavía despachaba doña Remedios.</p>
+        <div class="letter__body">
+          <p>Entonces el albarán iba clavado en un gancho detrás del mostrador y ella te lo leía en voz alta si le preguntabas por los tomates. Ahora lo miro en el móvil, pero es el mismo papel y la misma manía de saber de dónde viene todo.</p>
+          <p>He visto cambiar el barrio entero, las tiendas de al lado, los precios. Lo que no ha cambiado es que si un día la fruta no está buena, te lo dicen antes de que la cojas. Eso no se paga.</p>
+        </div>
+        <footer class="letter__sign"><b>Pilar Ortega Llanos</b><span>Clienta de la tienda de Ponzano desde 1979</span></footer>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- Boletín -->
+  <section class="ask on-field" aria-labelledby="boletin-h">
+    <h2 class="ask__h" id="boletin-h">
+      <span class="ask__line">¿Te mandamos</span>
+      <span class="ask__line" style="grid-row:3">la hoja?</span>
+    </h2>
+    <div class="ask__mid wrap">
+      <form class="ask__form" data-newsletter novalidate>
+        <label class="sr" for="nl-email">Tu correo electrónico</label>
+        <input class="input" id="nl-email" name="email" type="email" placeholder="tu@correo.es" autocomplete="email" inputmode="email" required aria-describedby="nl-note nl-msg">
+        <button class="btn" type="submit">Suscribirme</button>
+      </form>
+      <p class="ask__msg" id="nl-msg" role="status"></p>
+      <p class="ask__note" id="nl-note">La hoja de temporada: un correo el primer lunes de cada mes con lo que entra y quién lo trae. Sin ofertas de relleno; te das de baja con un clic.</p>
+    </div>
+  </section>
+</main>
+
+<!--@footer-->
+<script type="module" src="src/js/home.js"></script>
+</body>
+</html>
